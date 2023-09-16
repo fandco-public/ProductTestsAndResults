@@ -35,7 +35,7 @@ Reporting is done by you, the Tester, using [GitHub markdown](https://docs.githu
     2. sentence summarizing the test and error,
     2. list of initial conditions with links to any needed screenshots, and 
     3. list of unexpected results and what Tester _actually expected_ with supporting screenshots.
-3. Number, name your screenshots, and place them in the folder having the Test application's name (e.g. [./ExportYourGoogleDrive_screenshots](ExportYourGoogleDrive_screenshots/SCREENSHOTS_GO_HERE.md)).
+3. Number, name your screenshots, and place them in the folder having the Test application's name (e.g. [./ExportYourGoogleCalendar_screenshots](/ExportYourGoogleCalendar_screenshots/SCREENSHOTS_GO_HERE.md)).
 
 You may use tools to produce the GitHub-compatible markdown.
 
