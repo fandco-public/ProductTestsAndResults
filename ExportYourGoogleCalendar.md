@@ -1,6 +1,6 @@
 # Export Your G-Calendar Test Report
 
-This task requires Testers follow these basic instructions on Testing Procecure and Reporting here: [README.md](README.md).
+This task requires Testers follow the Testing Procecure and Reporting guidance here: [README.md](README.md).
 
 # Guidance
 
