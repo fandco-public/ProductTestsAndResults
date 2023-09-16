@@ -29,14 +29,16 @@ Reports are to use the clear, direct language seen above.
 Reporting is done by you, the Tester, using [GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) in your public fork of this repository as follows:
 
 1. Use your [GitHub](https://github.com) account to fork this repository.
-2. Report your Test results by editing the markdown file having the name of the Test application's (e.g. [ExportYourGoogleDrive.md]()).  
-  a. Each Test must be reproducible and have:
-    i. sentence summarizing the test and error,
-    ii. list of initial conditions with links to any needed screenshots, and 
-    iii. list of unexpected results and what Tester _actually expected_ with supporting screenshots.
-3. Number, name your screenshots, and place them in the folder having the Test application's name (e.g. [ExportYourGoogleDrive_screenshots]()).
- 
+2. Report your Test results by editing the markdown file having the name of the Test application's (e.g. [ExportYourGoogleCalendar.md](ExportYourGoogleCalendar).
+  1. Each Test must be reproducible and have:
+    1. UTC date and time, 
+    2. sentence summarizing the test and error,
+    2. list of initial conditions with links to any needed screenshots, and 
+    3. list of unexpected results and what Tester _actually expected_ with supporting screenshots.
+3. Number, name your screenshots, and place them in the folder having the Test application's name (e.g. [ExportYourGoogleDrive_screenshots](ExportYourGoogleDrive_screenshots)).
+
+You may use tools too produce the GitHub-compatible markdown.
 
 # Test Reports
 
-[Export Your Google Drive tests and results]()
+[Export Your Google Calendar tests and results](ExportYourGoogleCalendar.md)
