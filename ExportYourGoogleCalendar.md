@@ -24,7 +24,7 @@ NOTE: do not be confused by EGC's several names in various documents:
 
 ... they are all the same EGC whose name has been changed because Microsoft and Google have changed their naming rules over time.
 
-# Things we discussed during negotiation
+# Onboarding and Doing the Task
 
 ## Permission 
 
