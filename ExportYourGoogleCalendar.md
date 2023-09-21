@@ -67,6 +67,8 @@ The full test will use every feature multiple times with multiple types of data.
 
 # Tests and Results
 
+## Jakdevelop1 - 20230920
+
 The application "Export Your Google Calendar" (ECG) was tested multiple times with different screen interactions and input. However, the application behaves perfectly normally for all features except for one part. The "Change Language" feature is not working as it should work for a normal user. After opening the application, the system asks the user to sign in with email and password to import contacts as shown in the below screenshot # 1.
 
 ![screenshot # 1](ExportYourGoogleCalendar_screenshots/Screen1.png)
