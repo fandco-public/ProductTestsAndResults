@@ -67,4 +67,16 @@ The full test will use every feature multiple times with multiple types of data.
 
 # Tests and Results
 
-**FORK THIS REPOSITORY, EDIT THIS AREA WITH YOUR TEST RESULTS, AND ISSUE A PULL REQUEST TO SUBMIT**
+The application "Export Your Google Calendar" (ECG) was tested multiple times with different screen interactions and input. However, the application behaves perfectly normally for all features except for one part. The "Change Language" feature is not working as it should work for a normal user. After opening the application, the system asks the user to sign in with email and password to import contacts as shown in the below screenshot # 1.
+
+[screenshot # 1](C:\Users\hp\ProductTestsAndResults\ExportYourGoogleCalendar_screenshots\Screen 1.png)
+
+On the main screen, the user clicks on "Change Language" and the application shows different available languages for translation as shown in screenshot # 2.
+
+[screenshot # 2](C:\Users\hp\ProductTestsAndResults\ExportYourGoogleCalendar_screenshots\Screen 2.png)
+
+After selecting a language (for eg; Arabic), the application asks the user to sign in again as shown in screenshot # 3. Instead, the application should translate without asking the user to sign in every time the user changes the language. After the change in language, the user has to do all the steps again like allowing contacts permissions to the application. (which was already done in start after sign in as shown in screenshot # 4) 
+
+[screenshot # 3](C:\Users\hp\ProductTestsAndResults\ExportYourGoogleCalendar_screenshots\Screen 3.png)
+
+[screenshot # 4](C:\Users\hp\ProductTestsAndResults\ExportYourGoogleCalendar_screenshots\Screen 4.png)
