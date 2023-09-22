@@ -69,6 +69,8 @@ The full test will use every feature multiple times with multiple types of data.
 
 ## Jakdevelop1 - 20230920
 
+### BUG: 000001
+
 The application "Export Your Google Calendar" (ECG) was tested multiple times with different screen interactions and input. However, the application behaves perfectly normally for all features except for one part. The "Change Language" feature is not working as it should work for a normal user. After opening the application, the system asks the user to sign in with email and password to import contacts as shown in the below screenshot # 1.
 
 ![screenshot # 1](ExportYourGoogleCalendar_screenshots/Screen1.png)
@@ -82,3 +84,48 @@ After selecting a language (for eg; Arabic), the application asks the user to si
 ![screenshot # 3](ExportYourGoogleCalendar_screenshots/Screen3.png)
 
 ![screenshot # 4](ExportYourGoogleCalendar_screenshots/Screen4.png)
+
+#### ANSWER
+
+When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
+
+## kamran1400aw - 20230918
+
+### BUG: 000002 (GitHub Issue:1)
+
+Submit Button is hidden behind the Export to CSV button. When users are in normal full-screen view they can't even see if there is a button there but if they drag the right panel toward the right side only then they know there is a button behind Export to CSV. This button should be placed either on top of Export to CSV or at the very bottom.
+
+![screenshot 'Submit_Button.png'](ExportYourGoogleCalendar_screenshots/Submit_Button_anonymized.png)
+
+#### ANSWER
+
+The stackframe holding the bottom buttons should not be able to compress the frame/buttons above it when the app window bottom is moved upwards.  The whole app window should refuse to continue to compress beyond the point where content becomes hidden.  
+
+### BUG: 000003 (GitHub Issue:2)
+
+USers are able to pick the custom date formate first time without any issue but when they user the app and tries to change it. It doesn't work. Only way for users to change is either reset or close application and reopens every thing.
+
+![screenshot 'Custom_DateTime_Formate'](ExportYourGoogleCalendar_screenshots/Custom_DateTime_Formate_anonymized.png)
+
+#### ANSWER
+
+NONE as of yet
+
+### BUG: 000004 (GitHub Issue:3)
+
+The total Entries label is hidden behind the Help & Feedback, About Product, and How to use app buttons. These three buttons should be moved slight down!
+
+![screenshot 'Total_Entries.png'](ExportYourGoogleCalendar_screenshots/Total_Entries.png)
+
+#### ANSWER
+
+Change UI so compressing the app window stops at the point screen elements (including collapsed/hidden elements) might become obscured.
+
+### BUG: 000005 (GitHub Issue:4)
+
+When a user clicks on the change language option and selects any language. It logout users and then users have to signing once again to see the changes.
+
+#### Answer
+
+When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
+
