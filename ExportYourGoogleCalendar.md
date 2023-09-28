@@ -88,6 +88,7 @@ After selecting a language (for eg; Arabic), the application asks the user to si
 #### ANSWER
 
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
+A warning dialog has been inserted, confirming from user that he wants to continue with it.
 
 ## kamran1400aw - 20230918
 
@@ -109,7 +110,9 @@ USers are able to pick the custom date formate first time without any issue but 
 
 #### ANSWER
 
-NONE as of yet
+As the user interacts with the custom date format input field, the system dynamically displays a dropdown menu, filtering its contents based on the user's input. Even when the user removes characters using the backspace key, the dropdown reappears, offering relevant options.
+
+To enhance the user experience, we've added a convenient 'X' button next to the input field. Clicking this button instantly clears the contents of the custom date format input field, and the dropdown menu promptly reappears, ready to assist the user in selecting their preferred date format
 
 ### BUG: 000004 (GitHub Issue:3)
 
