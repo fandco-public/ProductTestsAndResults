@@ -4,7 +4,7 @@ This task requires Testers follow the Testing Procecure and Reporting guidance h
 
 # Guidance
 
-F&CO has a new version of our app "Export Your G-Calendar" (EGC) that needs testing (see webpage: https://freytag.us/export-google-calendar)
+F&CO's app "Export Your G-Calendar" (EGC) (see webpage: [https://freytag.us/export-google-calendar](https://freytag.us/export-google-calendar)) test results are reported here.
 
 Every feature of the app needs to be tried multiple times various ways in an effort to break it.  If something is unclear or doesn't work as you expect we want to know: 
 
@@ -24,13 +24,13 @@ NOTE: do not be confused by EGC's several names in various documents:
 
 ... they are all the same EGC whose name has been changed because Microsoft and Google have changed their naming rules over time.
 
-# Onboarding and Doing the Task
+# How To Do Testing
 
-## Permission 
+## Before Starting
 
 We need:
 
-1. your Win10 email address to grant you access and
+1. your Windows 10 or Windows 11 email address to grant you access and
 2. the fee you would require for the test.
 
 Please pull down the older version of EGC and use its feature set to determine how much work it would take to test with screenshots.  Then please tell us the total cost for completing this task.  Thank you.
@@ -39,29 +39,44 @@ _Please do not pay for our app.  That would actually ruin the test._
 
 The Test EGC is similar to the EGC already in the store so you can look at that app to see roughly how complicated the task will be.
 
-*Do not start this task until we have fully outlined the task, your fee, and agreed on a delivery date.*
+*Do not start this task until:*
 
-## Results
+1. we have your email address,
+2. agreed to your fee, and
+3. agreed to a delivery date.
 
-In GitHub, we'd want a markdown file giving your tests. Where appropriate you would insert a reference to a picture in a folder in the same repository as the markdown file outlining your tests.
+## Reporting Results
 
-I think you need an example of the test results format.  Here is an app manual we wrote on GitHub: https://github.com/fandco-public/Freytag-and-Company-LLC-Docs/blob/main/HOWTO-App-Publisher-for-Microsoft-Store-Usage.md
+We need test reports that give screenshots with explanations of what was done to reproduce the bug along with screenshots.  _Our being able to reproduce bugs is a condition of report acceptance._
 
-We're looking for a test report that gives screenshots with explanations of what was done to reproduce the bug along with screenshots.  Our being able to reproduce bugs is a condition of report acceptance.
+1. Clone this repository to your github account and
+  * insert your results to ExportYourGoogleCalendar.md, following the example for previous tests, at the bottom of this document in [GitHub Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+2. It will almost always be necessary to insert a picture to explain the bug setup and end conditions.  Put this picture in a folder in the same repository as the markdown file outlining your tests (see the [markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for the corrrect syntax).
+3. To submit your report (edits to this repo with screenshots) issue to pull request addressed to 'fandco-public'.  
+   
+Follow the example of previous tests seen in the *Tests and Results* section below when reporting your results.
+
+The report will be in markdown (*.md) format and will consist of:
+
+* bug setup condition and
+* failure condition screenshots,
+* with text explaining how to reproduce the bug.  
+
+_Please only document the setup conditions and result that is considered a bug with a screenshots of the setup and result.  Bugs include behavior you did not expect, so open to your professional judgement._
+
+Remember to *cover up all personal information in your submitted screenshots* leaving only the information needed to understand and reproduce the reported bug.
 
 You may use markdown editors such as [Typhora](https://typora.io/) to produce your report.
 
-*Please only document the setup conditions and result that is considered a bug with a screenshots of the setup and result.  Bugs include behavior you did not expect, so open to your professional judgement.*
-
 ## Goal
 
-The actual delivery requirements are [here](README.md).  This is simply that introductory description we gave you during negotation so you don't need to dig through prior messages.
+The detailed delivery requirements are [here](README.md).  This is simply that introductory description we gave you during negotation so you don't need to dig through prior messages.
 
-We want a test of: https://apps.microsoft.com/store/detail/export-your-gcalendar/9PNSMQ2SW74K?hl=en-us&gl=us&cid=egc-freytagwebsite-b5d1d7&rtc=1
+We want a test of: https://apps.microsoft.com/store/detail/export-your-gcalendar/9PNSMQ2SW74K
 
-This will be be a test of of a Win10/11 desktop app "Export Your Google Calendar" (EGC) downloaded from the Microsoft Store from a special package flight only available to you (and other testers).  This download will be tied to your Outlook/Hotmail email address that you use to buy things in the Microsoft Store.  You will not be expected to buy something but you will need to use this email to download the free app and the free 'test' addons in the app.  
+This will be be a test of of a Win10/11 desktop app "Export Your Google Calendar" (EGC) downloaded from the Microsoft Store from a special package flight only available to you (and other testers, this is why we need the email address you use when buying from the Microsoft Store).  This download will be tied to your Outlook/Hotmail email address that you use to buy things in the Microsoft Store.  You will not be expected to buy something but you will need to use this email to download the free app and the free 'test' addons in the app.  
 
-The report will be private and delivered on GitHub and only shared with the GitHub account 'fandco-public'.  The report will be in markdown (*.md) format and will consist of: bug setup condition and failure condition screenshots, with text explaining how to reproduce the bug.  
+The report will be public and delivered on GitHub.  Public bug reports show our customers the app is actively maintained and _give you, the Tester, a public example of your work._
 
 The full test will use every feature multiple times with multiple types of data.  Bug are not only explicit exceptions and crashes but also point where the app seems confusing to the tester in their professional opinion.
 
