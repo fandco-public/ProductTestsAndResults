@@ -160,6 +160,7 @@ When language button is clicked pop-up warning to user that changing the languag
 - Recurrence and attendees data appears more like a backend code. it should have been a plain text because there is just too much info and seems like one column is getting a lot of info. like comments, additional guests, email, ID, resources, and a lot more. I think if this column is just for attendees then the data should be attendees' name and not all this info appearing as a code.
 - Also if u look at the screenshot and the column of Recurrencee then u will see two rows showing some sort of code and also if users wants to export a data then results should be plain test and there should be null written in each box if there is no data.
 
-![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/871c5429-ac45-4e6c-aa2e-c9cc460352db)
+![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/df27ff68-dda0-42dd-a37c-373219516377)
+
 
 
