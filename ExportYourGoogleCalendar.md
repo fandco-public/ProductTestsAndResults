@@ -170,6 +170,12 @@ When language button is clicked pop-up warning to user that changing the languag
 
 
 ### BUG: 000009 (Reset Purchase Error 8)
-- when user press reset purchase button one time and for few seconds nothing happens and then i click again and nothing happened and after that i clicked that button multiples times then all of sudden popup error message kept coming for the number of times i click that button.
+- when user press reset purchase button one time and for few seconds nothing happens and then i click again and nothing happened and after that, i clicked that button multiples times then all of sudden popup error message kept coming for the number of times i clicked that button.
 
 ![ResetPurchaseErrorMessage](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/4d90ce7c-5ea3-4026-88e4-2ee5750d4ced)
+
+
+### BUG: 0000010 (Total Entries after SignOut Error 9)
+- when a user signout from the application and straight away signs in again and without selecting any dates they can see the previously viewed number of total entries label under the submit button. I think once they use is signout they should be able to view how many entries they viewed previously. It should start a new session.
+
+![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/e3ea51bc-8068-420b-bc6d-8ebb69c25cc3)
