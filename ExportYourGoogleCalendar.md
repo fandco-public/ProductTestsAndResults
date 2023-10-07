@@ -154,7 +154,7 @@ When language button is clicked pop-up warning to user that changing the languag
   
 - Help & Feedback button fonts are bold where as the other two buttons are not bold.
 
-![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/9395cd39-307b-4073-be19-668a12f3e438)
+![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/60706a24-1fce-4a3a-9f37-ce42caa50297)
 
 
 
