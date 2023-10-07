@@ -149,4 +149,5 @@ When language button is clicked pop-up warning to user that changing the languag
 
 USers are able to pick the custom date formate first time without any issue but when they user the app and tries to change it. It doesn't work. Only way for users to change is either reset or close application and reopens every thing.
 
-   [ ExportYourGoogleCalendar/ExportYourGoogleCalendar_screenshots/CodeAppear in Data.png](https://github.com/kamran1400aw/ExportYourGoogleCalendar/blob/e462c9667c9eccac1434831cb367ec0a6fa27f33/ExportYourGoogleCalendar_screenshots/CodeAppearinData.png)https://github.com/kamran1400aw/ExportYourGoogleCalendar/blob/e462c9667c9eccac1434831cb367ec0a6fa27f33/ExportYourGoogleCalendar_screenshots/CodeAppearinData.png
+
+ ![screenshot 'Total_Entries.png'](ExportYourGoogleCalendar_screenshots/CodeAppearinginData.png)
