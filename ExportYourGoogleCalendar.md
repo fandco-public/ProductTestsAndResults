@@ -136,9 +136,9 @@ The total Entries label is hidden behind the Help & Feedback, About Product, and
 
 Change UI so compressing the app window stops at the point screen elements (including collapsed/hidden elements) might become obscured.
 
-### BUG: 000005 (GitHub Issue:4)
+### BUG: 000005 (GitHub Issue:4) 
 
-When a user clicks on the change language option and selects any language. It logout users and then users have to signing once again to see the changes.
+When a user clicks on the change language option and selects any language. It logout users and then users have to sign in once again to see the changes.  This issue is still the same even on this version of the application.
 
 #### Answer
 
