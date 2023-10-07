@@ -1,4 +1,4 @@
-# Export Your G-Calendar Test Report
+![image](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/634fc69d-ffb5-47c1-b301-908455b6b01b)# Export Your G-Calendar Test Report
 
 This task requires Testers follow the Testing Procecure and Reporting guidance here: [README.md](README.md).
 
@@ -155,6 +155,13 @@ When language button is clicked pop-up warning to user that changing the languag
 - Help & Feedback button fonts are bold where as the other two buttons are not bold.
 
 ![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/60706a24-1fce-4a3a-9f37-ce42caa50297)
+
+### BUG: 000007 (Recurrence and attendees data issues 6)
+- Recurrence and attendees data appears more like a backend code. it should have been a plain text because there is just too much info and seems like one column is getting a lot of info. like comments, additional guests, email, ID, resources, and a lot more. I think if this column is just for attendees then the data should be attendees' name and not all this info appearing as a code.
+- Also if u look at the screenshot and the column of Recurrencee then u will see two rows showing some sort of code and also if users wants to export a data then results should be plain test and there should be null written in each box if there is no data.
+
+  ![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/66bf4d55-08c5-43e3-94d2-7c930582379a)
+
 
 
 
