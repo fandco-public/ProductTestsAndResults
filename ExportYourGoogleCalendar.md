@@ -178,4 +178,5 @@ When language button is clicked pop-up warning to user that changing the languag
 ### BUG: 0000010 (Total Entries after SignOut Error 9)
 - when a user signout from the application and straight away signs in again and without selecting any dates they can see the previously viewed number of total entries label under the submit button. I think once they use is signout they should be able to view how many entries they viewed previously. It should start a new session.
 
-![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/e3ea51bc-8068-420b-bc6d-8ebb69c25cc3)
+![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/b2df13cb-3523-49f4-9b40-84c96ef783b9)
+
