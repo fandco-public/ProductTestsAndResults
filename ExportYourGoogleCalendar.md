@@ -145,7 +145,7 @@ When a user clicks on the change language option and selects any language. It lo
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
 
 
-### BUG: 000006 (Button Text Need Space Issue: 5
+### BUG: 000006 (Button Text Need Space Issue: 5)
 - Help & Feedback, About Product and How to use the app? buttons need a few fixes. First of all the button width and height are fixed compared to the other buttons on the app.
   
 - Secondly, there is no space before and after the test within the button as you can see it's almost touching the edges.
