@@ -144,3 +144,9 @@ When a user clicks on the change language option and selects any language. It lo
 
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
 
+
+### BUG: 000005 KAM
+
+USers are able to pick the custom date formate first time without any issue but when they user the app and tries to change it. It doesn't work. Only way for users to change is either reset or close application and reopens every thing.
+
+![screenshot 'Custom_DateTime_Formate'](ExportYourGoogleCalendar_screenshots/Custom_DateTime_Formate_anonymized.png)
