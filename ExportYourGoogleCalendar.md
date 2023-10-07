@@ -163,4 +163,6 @@ When language button is clicked pop-up warning to user that changing the languag
 ![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/df27ff68-dda0-42dd-a37c-373219516377)
 
 
-
+### BUG: 000008 (Abbreviations issues 7)
+- In the help section u didn't mention all the abbreviations. In some places it's dddd and in somewhere it's just d. so all those should also be mentioned in the help popup.
+  ![AbbrevationsMissing](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/252d2d12-1049-42bc-a5de-80419ef0010a)
