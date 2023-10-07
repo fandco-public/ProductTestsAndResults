@@ -167,3 +167,9 @@ When language button is clicked pop-up warning to user that changing the languag
 - In the help section u didn't mention all the abbreviations. In some places it's dddd and in somewhere it's just d. so all those should also be mentioned in the help popup.
 
   ![AbbrevationsMissing](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/252d2d12-1049-42bc-a5de-80419ef0010a)
+
+
+### BUG: 000009 (Reset Purchase Error 8)
+- when user press reset purchase button one time and for few seconds nothing happens and then i click again and nothing happened and after that i clicked that button multiples times then all of sudden popup error message kept coming for the number of times i click that button.
+
+![ResetPurchaseErrorMessage](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/4d90ce7c-5ea3-4026-88e4-2ee5750d4ced)
