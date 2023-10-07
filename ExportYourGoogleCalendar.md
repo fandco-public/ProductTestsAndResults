@@ -145,9 +145,16 @@ When a user clicks on the change language option and selects any language. It lo
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
 
 
-### BUG: 000005 KAM
+### BUG: 000006 (Button Text Need Space Issue: 5
+- Help & Feedback, About Product and How to use the app? buttons need a few fixes. First of all the button width and height are fixed compared to the other buttons on the app.
+  
+- Secondly, there is no space before and after the test within the button as you can see it's almost touching the edges.
+  
+- The third Button design on the app is changing and All button designs should be Uniform throughout the application. Currently, on one page we can see Round edges buttons, Straight edges buttons, and buttons that have both round and straight edges.
+  
+- Help & Feedback button fonts are bold where as the other two buttons are not bold.
 
-USers are able to pick the custom date formate first time without any issue but when they user the app and tries to change it. It doesn't work. Only way for users to change is either reset or close application and reopens every thing.
+![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/9395cd39-307b-4073-be19-668a12f3e438)
 
-![CodeAppearinData (2)](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/d5d51060-ba57-4512-a46e-bd087dc8f3b8)
+
 
