@@ -136,11 +136,47 @@ The total Entries label is hidden behind the Help & Feedback, About Product, and
 
 Change UI so compressing the app window stops at the point screen elements (including collapsed/hidden elements) might become obscured.
 
-### BUG: 000005 (GitHub Issue:4)
+### BUG: 000005 (GitHub Issue:4) 
 
-When a user clicks on the change language option and selects any language. It logout users and then users have to signing once again to see the changes.
+When a user clicks on the change language option and selects any language. It logout users and then users have to sign in once again to see the changes.  This issue is still the same even on this version of the application.
 
 #### Answer
 
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
+
+
+### BUG: 000006 (Button Text Need Space Issue: 5)
+- Help & Feedback, About Product and How to use the app? buttons need a few fixes. First of all the button width and height are fixed compared to the other buttons on the app.
+  
+- Secondly, there is no space before and after the test within the button as you can see it's almost touching the edges.
+  
+- The third Button design on the app is changing and All button designs should be Uniform throughout the application. Currently, on one page we can see Round edges buttons, Straight edges buttons, and buttons that have both round and straight edges.
+  
+- Help & Feedback button fonts are bold where as the other two buttons are not bold.
+
+![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/60706a24-1fce-4a3a-9f37-ce42caa50297)
+
+### BUG: 000007 (Recurrence and attendees data issues 6)
+- Recurrence and attendees data appears more like a backend code. it should have been a plain text because there is just too much info and seems like one column is getting a lot of info. like comments, additional guests, email, ID, resources, and a lot more. I think if this column is just for attendees then the data should be attendees' name and not all this info appearing as a code.
+- Also if u look at the screenshot and the column of Recurrencee then u will see two rows showing some sort of code and also if users wants to export a data then results should be plain test and there should be null written in each box if there is no data.
+
+![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/df27ff68-dda0-42dd-a37c-373219516377)
+
+
+### BUG: 000008 (Abbreviations issues 7)
+- In the help section u didn't mention all the abbreviations. In some places it's dddd and in somewhere it's just d. so all those should also be mentioned in the help popup.
+
+  ![AbbrevationsMissing](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/252d2d12-1049-42bc-a5de-80419ef0010a)
+
+
+### BUG: 000009 (Reset Purchase Error 8)
+- when user press reset purchase button one time and for few seconds nothing happens and then i click again and nothing happened and after that, i clicked that button multiples times then all of sudden popup error message kept coming for the number of times i clicked that button.
+
+![ResetPurchaseErrorMessage](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/4d90ce7c-5ea3-4026-88e4-2ee5750d4ced)
+
+
+### BUG: 0000010 (Total Entries after SignOut Error 9)
+- when a user signout from the application and straight away signs in again and without selecting any dates they can see the previously viewed number of total entries label under the submit button. I think once they use is signout they should be able to view how many entries they viewed previously. It should start a new session.
+
+![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/b2df13cb-3523-49f4-9b40-84c96ef783b9)
 
