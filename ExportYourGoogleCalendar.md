@@ -54,6 +54,7 @@ We need test reports that give screenshots with explanations of what was done to
 2. It will almost always be necessary to insert a picture to explain the bug setup and end conditions.  Put this picture in a folder in the same repository as the markdown file outlining your tests (see the [markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for the corrrect syntax).
 3. To submit your report (edits to this repo with screenshots) issue to pull request addressed to 'fandco-public'.  
    
+
 Follow the example of previous tests seen in the *Tests and Results* section below when reporting your results.
 
 The report will be in markdown (*.md) format and will consist of:
@@ -180,3 +181,38 @@ When language button is clicked pop-up warning to user that changing the languag
 
 ![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/b2df13cb-3523-49f4-9b40-84c96ef783b9)
 
+
+
+
+
+### BUG 1:
+
+At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
+
+![image-20231116112938590](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116112938590.png)
+
+### Bug 2:
+
+After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
+
+![image-20231116113613774](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116113613774.png)
+
+### Bug 3:
+
+Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
+
+![image-20231116114403835](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116114403835.png)
+
+### Bug 4:
+
+Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
+
+![image-20231116114914990](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116114914990.png)
+
+![image-20231116123411178](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116123411178.png)
+
+### BUG 5:
+
+Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
+
+![image-20231116123517045](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116123517045.png)
