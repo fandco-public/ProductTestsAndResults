@@ -189,7 +189,7 @@ When language button is clicked pop-up warning to user that changing the languag
 
 At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
 
-![image-20231116112938590](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116112938590.png)
+![image-20231116112938590]((https://github.com/Jakdeveloper1/ProductTestsAndResults/blob/2333d4b8d336a73c3c4a177711c7847535432f54/ExportYourGoogleCalendar_screenshots/bug1.png))
 
 ### Bug 2:
 
