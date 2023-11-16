@@ -195,24 +195,24 @@ At the time of converting a recurrent event file from ".ics to .csv". Apply the 
 
 After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
 
-![image-20231116113613774](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116113613774.png)
+![image-20231116113613774](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ExportYourGoogleCalendar_screenshots/bug2.png)
 
 ### Bug 3:
 
 Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
 
-![image-20231116114403835](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116114403835.png)
+![image-20231116114403835](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ExportYourGoogleCalendar_screenshots/bug3.png)
 
 ### Bug 4:
 
 Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
 
-![image-20231116114914990](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116114914990.png)
+![image-20231116114914990](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ExportYourGoogleCalendar_screenshots/bug4.png)
 
-![image-20231116123411178](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116123411178.png)
+![image-20231116123411178](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ExportYourGoogleCalendar_screenshots/bug4-part2.png)
 
 ### BUG 5:
 
 Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
 
-![image-20231116123517045](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20231116123517045.png)
+![image-20231116123517045](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ExportYourGoogleCalendar_screenshots/bug5.png)
