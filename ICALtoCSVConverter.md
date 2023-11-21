@@ -53,7 +53,7 @@ The Test EGC is similar to the EGC already in the store so you can look at that 
 We need test reports that give screenshots with explanations of what was done to reproduce the bug along with screenshots.  _Our being able to reproduce bugs is a condition of report acceptance._  Please also include in this repo any ICAL or CSV files you used to generate your results.
 
 1. Clone this repository to your github account and
-  * insert your results to ExportYourGoogleCalendar.md, following the example for previous tests, at the bottom of this document in [GitHub Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+  * insert your results to ICALtoCSVConverter.md, following the example for previous tests, at the bottom of this document in [GitHub Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 2. It will almost always be necessary to insert a picture to explain the bug setup and end conditions.  Put this picture in a folder in the same repository as the markdown file outlining your tests (see the [markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for the corrrect syntax).
 3. To submit your report (edits to this repo with screenshots) issue to pull request addressed to 'fandco-public'.  
    
@@ -76,7 +76,7 @@ You may use markdown editors such as [Typhora](https://typora.io/) to produce yo
 
 The detailed delivery requirements are [here](README.md).  This is simply that introductory description we gave you during negotation so you don't need to dig through prior messages.
 
-We want a test of: https://apps.microsoft.com/store/detail/export-your-gcalendar/9PNSMQ2SW74K
+We want a test of: https://apps.microsoft.com/detail/ical-to-csv-converter/9P801WD6F1VZ
 
 This will be be a test of of a Win10/11 desktop app "Export Your Google Calendar" (EGC) downloaded from the Microsoft Store from a special package flight only available to you (and other testers, this is why we need the email address you use when buying from the Microsoft Store).  This download will be tied to your Outlook/Hotmail email address that you use to buy things in the Microsoft Store.  You will not be expected to buy something but you will need to use this email to download the free app and the free 'test' addons in the app.  
 
@@ -85,3 +85,37 @@ The report will be public and delivered on GitHub.  Public bug reports show our 
 The full test will use every feature multiple times with multiple types of data.  Bug are not only explicit exceptions and crashes but also point where the app seems confusing to the tester in their professional opinion.
 
 # Tests and Results
+
+## Tests by Jakdeveloper1
+
+### BUG 1:
+
+At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
+
+![bug1.png](ICALtoCSVConverter_screenshots/bug1.png)
+
+### Bug 2:
+
+After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
+
+![bug2.png](ICALtoCSVConverter_screenshots/bug2.png)
+
+### Bug 3:
+
+Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
+
+![bug3.png](ICALtoCSVConverter_screenshots/bug3.png)
+
+### Bug 4:
+
+Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
+
+![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
+
+![bug4-part2.png](ICALtoCSVConverter_screenshots/bug4-part2.png)
+
+### BUG 5:
+
+Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
+
+![bug5.png](ICALtoCSVConverter_screenshots/bug5.png)
