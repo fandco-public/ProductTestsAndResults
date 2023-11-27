@@ -54,6 +54,7 @@ We need test reports that give screenshots with explanations of what was done to
 2. It will almost always be necessary to insert a picture to explain the bug setup and end conditions.  Put this picture in a folder in the same repository as the markdown file outlining your tests (see the [markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for the corrrect syntax).
 3. To submit your report (edits to this repo with screenshots) issue to pull request addressed to 'fandco-public'.  
    
+
 Follow the example of previous tests seen in the *Tests and Results* section below when reporting your results.
 
 The report will be in markdown (*.md) format and will consist of:
@@ -179,4 +180,6 @@ When language button is clicked pop-up warning to user that changing the languag
 - when a user signout from the application and straight away signs in again and without selecting any dates they can see the previously viewed number of total entries label under the submit button. I think once they use is signout they should be able to view how many entries they viewed previously. It should start a new session.
 
 ![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/b2df13cb-3523-49f4-9b40-84c96ef783b9)
+
+
 
