@@ -36,7 +36,7 @@ Reports are to use the clear, direct language seen above.
 Reporting is done by you, the Tester, using [GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) in your public fork of this repository as follows:
 
 1. Use your [GitHub](https://github.com) account to fork this repository.
-2. Report your Test results by editing the markdown file having the name of the Test application's (e.g. [ExportYourGoogleCalendar.md](ExportYourGoogleCalendar.md or [ICALtoCSVConverter.md](ICALtoCSVConverter.md)).
+2. Report your Test results by editing the markdown file having the name of the Test application's (e.g. [ExportYourGoogleCalendar.md](ExportYourGoogleCalendar.md) or [ICALtoCSVConverter.md](ICALtoCSVConverter.md)).
   1. Each Test must be reproducible and have:
     1. *UTC date and time,*
     2. sentence summarizing the test and error,
