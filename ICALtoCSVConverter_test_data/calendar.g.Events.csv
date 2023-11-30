@@ -1,0 +1,9 @@
+﻿StartDate,EndDate,Duration,IsAllDay,Summary,Location,Description,Rules,Attendees
+"14-08-2023 00:00:00","15-08-2023 00:00:00","24","True","Independence Day","","Celebration of independence
+","",""
+"05-10-2023 00:00:00","06-10-2023 00:00:00","24","True","Teacher's Day","","To celebrate teachers day for a day.
+","",""
+"31-10-2023 08:30:00","31-10-2023 17:00:00","8.5","False","Liberty Chowk event","","This is a event for peaceful protest event.
+","",""
+"09-11-2023 09:00:00","09-11-2023 17:00:00","8","False","Iqbal Day Event","","Off day for Allama Iqbal.
+","",""
