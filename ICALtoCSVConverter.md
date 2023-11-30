@@ -100,6 +100,7 @@ At the time of converting a recurrent event file from ".ics to .csv". Apply the 
 After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
 
 ![bug2.png](ICALtoCSVConverter_screenshots/bug2.png)
+[calendar.g.Events.csv](ICALtoCSVConverter_test_data/calendar.g.Events.csv)
 
 ### Bug 3:
 
@@ -113,10 +114,12 @@ Once you have converted the .ics (journal) file to the .csv file. The resultant 
 
 ![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
 
-![bug4-part2.png](ICALtoCSVConverter_screenshots/bug4-part2.png)
+[calendar_journal.g.Journal (2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal (2).csv)
+
 
 ### BUG 5:
 
 Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
 
 ![bug5.png](ICALtoCSVConverter_screenshots/bug5.png)
+[calendar_todos.g.Todos.csv](ICALtoCSVConverter_test_data/calendar_todos.g.Todos.csv)
