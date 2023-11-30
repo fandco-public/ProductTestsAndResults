@@ -114,7 +114,7 @@ Once you have converted the .ics (journal) file to the .csv file. The resultant 
 
 ![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
 
-[calendar_journal.g.Journal (2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal (2).csv)
+[calendar_journal.g.Journal(2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal2.csv)
 
 
 ### BUG 5:
