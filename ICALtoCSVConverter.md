@@ -95,6 +95,10 @@ At the time of converting a recurrent event file from ".ics to .csv". Apply the 
 ![bug1.png](ICALtoCSVConverter_screenshots/bug1.png)
 [calender.ics](ICALtoCSVConverter_test_data/calendar.ics)
 
+#### ANSWER
+
+*Failed to reproduce* in this tester commit: 7f72d28.  Perhaps the 'Apply' button was not clicked?  Moved the 'Apply' button closer to the date fields in hopes it is not missed.  
+
 ### Bug 2:
 
 After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
