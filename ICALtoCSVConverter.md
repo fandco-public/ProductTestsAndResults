@@ -92,30 +92,40 @@ The full test will use every feature multiple times with multiple types of data.
 
 At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
 
-![image-20231116112938590](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug1.png)
+![bug1.png](ICALtoCSVConverter_screenshots/bug1.png)
+[calender.ics](ICALtoCSVConverter_test_data/calendar.ics)
+
+#### ANSWER
+
+*Failed to reproduce* in this tester commit: 7f72d28.  Perhaps the 'Apply' button was not clicked?  Moved the 'Apply' button closer to the date fields in hopes it is not missed.  
 
 ### Bug 2:
 
 After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
 
-![image-20231116113613774](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug2.png)
+![bug2.png](ICALtoCSVConverter_screenshots/bug2.png)
+[calendar.g.Events.csv](ICALtoCSVConverter_test_data/calendar.g.Events.csv)
 
 ### Bug 3:
 
 Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
 
-![image-20231116114403835](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug3.png)
+![bug3.png](ICALtoCSVConverter_screenshots/bug3.png)
 
 ### Bug 4:
 
 Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
 
-![image-20231116114914990](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug4.png)
+![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
 
-![image-20231116123411178](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug4-part2.png)
+... and ...
+
+![bug4-part2.png](ICALtoCSVConverter_screenshots/bug4-part2.png)
+[calendar_journal.g.Journal(2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal2.csv)
 
 ### BUG 5:
 
 Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
 
-![image-20231116123517045](https://raw.githubusercontent.com/Jakdeveloper1/ProductTestsAndResults/main/ICALtoCSVConverter_screenshots/bug5.png)
+![bug5.png](ICALtoCSVConverter_screenshots/bug5.png)
+[calendar_todos.g.Todos.csv](ICALtoCSVConverter_test_data/calendar_todos.g.Todos.csv)
