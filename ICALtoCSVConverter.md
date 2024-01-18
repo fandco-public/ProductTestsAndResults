@@ -94,12 +94,16 @@ The ICS-to-CSV Apply button should read 'Reformat Date'.
 
 #### ANSWER
 
+Fix made.
+
 
 ### BUG 000019
 
 The CSV-to-ICS Apply button should read 'Check Dates'.
 
 #### ANSWER
+
+Fix made.
 
 
 ### BUG 000018
@@ -108,12 +112,16 @@ In the date boxes the 'X' should clear the date not just delete the date from ri
 
 #### ANSWER
 
+The 'X' is defined by the control and not customizable.
+
 
 ### BUG 000017
 
 When a *.ics or *.csv file is 'Unload'-ed then it should no longer appear in the tabular window to the right. The window should be empty until another file is selected.
 
 #### ANSWER
+
+Fix made.
 
 
 ### BUG 000016
@@ -123,6 +131,8 @@ he loaded data.
 
 #### ANSWER
 
+In csv-to-ics code has been added to show error message on 'apply' button.  But error has to be shown if parser fails to parse any date in any row.
+
 
 ### BUG 000015
 
@@ -131,12 +141,16 @@ the filesystem.
 
 #### ANSWER
 
+Fix made.
+
 
 ### BUG 000014
 
 In the ICS to CSV pane, clicking the 'Apply' button without a date range produces an unhandled exception. It should produce a handled exception.
 
 #### ANSWER
+
+This bug cannot be reproduced.
 
 
 ### BUG 000013
