@@ -157,6 +157,8 @@ Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) 
 
 #### ANSWER
 
+Currently our  CSV to ICS converter only supports converting of calendar events items only.  It expects specific header related to calendar events in csv file.   Anything else will throw exception.
+
 
 ### Bug 000004:
 
@@ -171,6 +173,11 @@ Once you have converted the .ics (journal) file to the .csv file. The resultant 
 
 #### ANSWER
 
+Currently our  CSV to ICS converter only supports converting of calendar events items only.  It expects specific header related to calendar events in csv file.   Anything else will throw exception.
+Enduser also is likely to misunderstand this behavior so a new "What's This?" button is inserted on top (see screenshot below).
+
+![Answer-3-and-4.png](ICALtoCSVConverter_screenshots/Answer-3-and-4-whats-this-button.png)
+
 
 ### Bug 000003:
 
@@ -179,6 +186,11 @@ Multiple instances of the same file can be uploaded to the "ICAL to CSV converte
 ![bug3.png](ICALtoCSVConverter_screenshots/bug3.png)
 
 #### ANSWER
+
+We allow the user to select and upload the same file multiple times, it's his choice, however system will handle it without issue.
+Enduser also is likely to misunderstand this behavior so a new "What's This?" button is inserted on top (see screenshot below).
+
+![Answer-3-and-4.png](ICALtoCSVConverter_screenshots/Answer-3-and-4-whats-this-button.png)
 
 
 ### Bug 000002:
@@ -189,6 +201,9 @@ After converting the file from .ics to .cvs. The same file is re-uploaded to the
 [calendar.g.Events.csv](ICALtoCSVConverter_test_data/calendar.g.Events.csv)
 
 #### ANSWER
+
+In the CSV-to-ICS module, unlike in the ICS-to-CSV module, we have to specify input date format and not the output date format.  The 'red x' appears next to dates that do not match the input date format.  
+The input date format is specified in the 'Apply' box.  
 
 
 ### BUG 000001
