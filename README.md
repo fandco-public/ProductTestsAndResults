@@ -4,8 +4,6 @@ If this document has an error, issue a pull request with the correction and aler
 
 # Test Reports
 
-Report your test results on one of the following pages:
-
 * [Export Your Cloud Calendar tests and results](ExportYourGoogleCalendar.md)
 * [ICAL to CSV Converter](ICALtoCSVConverter.md)
 
@@ -37,11 +35,11 @@ Reporting is done by you, the Tester, using [GitHub markdown](https://docs.githu
 
 1. Use your [GitHub](https://github.com) account to fork this repository.
 2. Report your Test results by editing the markdown file having the name of the Test application's (e.g. [ExportYourGoogleCalendar.md](ExportYourGoogleCalendar.md) or [ICALtoCSVConverter.md](ICALtoCSVConverter.md)).
-  1. Each Test must be reproducible and have:
-    1. *UTC date and time,*
-    2. sentence summarizing the test and error,
-    2. list of initial conditions with links to any needed screenshots, and 
-    3. list of unexpected results and what Tester _actually expected_ with supporting screenshots.
+	1. Each Test must be reproducible and have:
+		1. *UTC date and time,*
+		2. sentence summarizing the test and error,
+		2. list of initial conditions with links to any needed screenshots, and 
+		3. list of unexpected results and what Tester _actually expected_ with supporting screenshots.
 3. Number, name your screenshots, and place them in the folder having the Test application's name (e.g. [./ExportYourGoogleCalendar_screenshots](/ExportYourGoogleCalendar_screenshots/SCREENSHOTS_GO_HERE.md)).
 
 You may use tools to produce the GitHub-compatible markdown.

@@ -86,44 +86,140 @@ The full test will use every feature multiple times with multiple types of data.
 
 # Tests and Results
 
-## Tests by Jakdeveloper1
+## Tests by rfreytag
 
-### BUG 1:
+### BUG 000013
 
-At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
-
-![bug1.png](ICALtoCSVConverter_screenshots/bug1.png)
-[calender.ics](ICALtoCSVConverter_test_data/calendar.ics)
+The ICS-to-CSV Apply button should read 'Reformat Date'.
 
 #### ANSWER
 
-*Failed to reproduce* in this tester commit: 7f72d28.  Perhaps the 'Apply' button was not clicked?  Moved the 'Apply' button closer to the date fields in hopes it is not missed.  
 
-### Bug 2:
+### BUG 000012
+
+The CSV-to-ICS Apply button should read 'Check Dates'.
+
+#### ANSWER
+
+
+### BUG 000011
+
+In the date boxes the 'X' should clear the date not just delete the date from right-to-left.
+
+#### ANSWER
+
+
+### BUG 000010
+
+When a *.ics or *.csv file is 'Unload'-ed then it should no longer appear in the tabular window to right.  The window should be empty until another file is selected.
+
+#### ANSWER
+
+
+### BUG 000009
+
+When loading a CSV file with a date format that doesn't match the date format in the 'Apply' box an error is thrown.
+Instead, an error should only be thrown when none of the allowed date formats match the format of the loaded data.
+
+#### ANSWER
+
+
+### BUG 000008
+
+Change 'Delete' to 'Unload' on all the interfaces so that users don't get the wrong idea that 'Delete'-ing a loaded file does anything other than unloading the file from the ICAL app while leaving the file itself on the filesystem.
+
+#### ANSWER
+
+
+### BUG 000007
+
+In the ICS to CSV pain, clicking the 'Apply' button without a date range produces an unhandled exception.
+It should produce a handled exception.
+
+#### ANSWER
+
+
+### BUG 000006
+
+If ICS-to-CSV is given a date range the events with dates matching the _end_ date are _not_ included. 
+
+#### ANSWER
+
+
+## Tests by Jakdeveloper1
+
+### BUG 000005:
+
+Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
+
+![bug5.png](ICALtoCSVConverter_screenshots/bug5.png)
+[calendar_todos.g.Todos.csv](ICALtoCSVConverter_test_data/calendar_todos.g.Todos.csv)
+
+#### ANSWER
+
+Currently our  CSV to ICS converter only supports converting of calendar events items only.  It expects specific header related to calendar events in csv file.   Anything else will throw exception.
+
+
+### Bug 000004:
+
+Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
+
+![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
+
+... and ...
+
+![bug4-part2.png](ICALtoCSVConverter_screenshots/bug4-part2.png)
+[calendar_journal.g.Journal(2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal2.csv)
+
+#### ANSWER
+
+Currently our  CSV to ICS converter only supports converting of calendar events items only.  It expects specific header related to calendar events in csv file.   Anything else will throw exception.
+Enduser also is likely to misunderstand this behavior so a new "What's This?" button is inserted on top (see screenshot below).
+
+![Answer-3-and-4.png](ICALtoCSVConverter_screenshots/Answer-3-and-4-whats-this-button.png)
+
+
+### Bug 000003:
+
+Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
+
+![bug3.png](ICALtoCSVConverter_screenshots/bug3.png)
+
+#### ANSWER
+
+We allow the user to select and upload the same file multiple times, it's his choice, however system will handle it without issue.
+Enduser also is likely to misunderstand this behavior so a new "What's This?" button is inserted on top (see screenshot below).
+
+![Answer-3-and-4.png](ICALtoCSVConverter_screenshots/Answer-3-and-4-whats-this-button.png)
+
+
+### Bug 000002:
 
 After converting the file from .ics to .cvs. The same file is re-uploaded to the ".csv to .ics" section. Apply different date-time formats to the file results (rows), and you can see the incorrect format is applied to the resultant "Start Date/End Date" columns as shown in the screenshot below.
 
 ![bug2.png](ICALtoCSVConverter_screenshots/bug2.png)
 [calendar.g.Events.csv](ICALtoCSVConverter_test_data/calendar.g.Events.csv)
 
-### Bug 3:
+#### ANSWER
 
-Multiple instances of the same file can be uploaded to the "ICAL to CSV converter" application. About the below screenshot, the file named "diff.csv" can be seen as uploaded multiple times to be converted from .csv to .ics format.
-
-![bug3.png](ICALtoCSVConverter_screenshots/bug3.png)
-
-### Bug 4:
-
-Once you have converted the .ics (journal) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status. To further add to the information, the resultant .csv file is converted successfully in the previous step and shows correct data inside the file after conversion. So, there is no issue in the converted .csv file (Screenshot is attached). 
-
-![bug4.png](ICALtoCSVConverter_screenshots/bug4.png)
-
-[calendar_journal.g.Journal(2).csv](ICALtoCSVConverter_test_data/calendar_journal.g.Journal2.csv)
+In the CSV-to-ICS module, unlike in the ICS-to-CSV module, we have to specify input date format and not the output date format.  The 'red x' appears next to dates that do not match the input date format.  
+The input date format is specified in the 'Apply' box.  
 
 
-### BUG 5:
+### BUG 000001
 
-Same issue with the .ics (ToDos) file: Once you have converted the .ics (ToDos) file to the .csv file. The resultant .csv file is then uploaded to the system, which shows the error message of "mismatch header" status.
+At the time of converting a recurrent event file from ".ics to .csv". Apply the date filter to the result (rows) as shown in the screenshot below. The filter applied is "Select from Date (dd/mm/yyyy)" is 01/10/2023 and "To Date (dd/mm/yyyy)" is 11/12/2023. 
+After applying that filter, the first row (highlighted) should be filtered out of the current results, but it is showing incorrect results.
 
-![bug5.png](ICALtoCSVConverter_screenshots/bug5.png)
-[calendar_todos.g.Todos.csv](ICALtoCSVConverter_test_data/calendar_todos.g.Todos.csv)
+![bug1.png](ICALtoCSVConverter_screenshots/bug1.png)
+[calender.ics](ICALtoCSVConverter_test_data/calendar.ics)
+
+#### ANSWER
+
+
+*Failed to reproduce* in this tester commit: 7f72d28.  Perhaps the 'Apply' button was not clicked?  Moved the 'Apply' button closer to the date fields in hopes it is not missed.  
+_Reproduced in commit 859c14f1,_ the problem might be that the default 'Start Date' and 'End Date' display format is yyyy-MM-dd while the filter is dd-MM-yyyy.  The default filter format is changed to yyyy-MM-dd to avoid this problem.  
+Fixed in commit ba5466b.
+
+
+
