@@ -159,6 +159,7 @@ The ICS-to-CSV Apply button should read 'Reformat Date'.
 
 #### ANSWER
 
+Fix Made
 
 ### BUG 000012
 
@@ -166,6 +167,7 @@ The CSV-to-ICS Apply button should read 'Check Dates'.
 
 #### ANSWER
 
+Fix Made
 
 ### BUG 000011
 
@@ -173,6 +175,7 @@ In the date boxes the 'X' should clear the date not just delete the date from ri
 
 #### ANSWER
 
+The 'X' is defined by the control and not customizable.
 
 ### BUG 000010
 
@@ -180,6 +183,7 @@ When a *.ics or *.csv file is 'Unload'-ed then it should no longer appear in the
 
 #### ANSWER
 
+Fix made.
 
 ### BUG 000009
 
@@ -188,6 +192,7 @@ Instead, an error should only be thrown when none of the allowed date formats ma
 
 #### ANSWER
 
+The expected behavior is that if any dates do not match, it indicates an incorrect date format, rendering the file incompatible with conversion to ICS. The 'x' mark at the bottom right corner of the data grid serves as a visual cue for the user, highlighting the specific record where the date does not align with the specified format.
 
 ### BUG 000008
 
@@ -195,14 +200,15 @@ Change 'Delete' to 'Unload' on all the interfaces so that users don't get the wr
 
 #### ANSWER
 
+Fix made.
 
 ### BUG 000007
 
-In the ICS to CSV pain, clicking the 'Apply' button without a date range produces an unhandled exception.
-It should produce a handled exception.
+In the ICS to CSV pain, clicking the 'Apply' button without a date range produces an unhandled exception. It should produce a handled exception.
 
 #### ANSWER
 
+Fix made.
 
 ### BUG 000006
 
@@ -210,6 +216,7 @@ If ICS-to-CSV is given a date range the events with dates matching the _end_ dat
 
 #### ANSWER
 
+Fix made.
 
 ## Tests by Jakdeveloper1
 
