@@ -204,7 +204,7 @@ Fix made.
 
 ### BUG 000007
 
-In the ICS to CSV pain, clicking the 'Apply' button without a date range produces an unhandled exception. It should produce a handled exception.
+In the ICS to CSV pane, clicking the 'Apply' button without a date range produces an unhandled exception. It should produce a handled exception.
 
 #### ANSWER
 
