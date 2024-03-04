@@ -105,6 +105,11 @@ After selecting a language (for eg; Arabic), the application asks the user to si
 
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
 
+#### RETEST
+
+Confirmed fixed in 5.0.10.0
+
+
 ## kamran1400aw - 20230918
 
 ### BUG: 000002 (GitHub Issue:1)
@@ -117,15 +122,21 @@ Submit Button is hidden behind the Export to CSV button. When users are in norma
 
 The stackframe holding the bottom buttons should not be able to compress the frame/buttons above it when the app window bottom is moved upwards.  The whole app window should refuse to continue to compress beyond the point where content becomes hidden.  
 
+### RETEST
+
+Confirmed fixed - minimum frame and window sizes work to prevent this problem in 5.0.10.0
+
+
 ### BUG: 000003 (GitHub Issue:2)
 
-USers are able to pick the custom date formate first time without any issue but when they user the app and tries to change it. It doesn't work. Only way for users to change is either reset or close application and reopens every thing.
+Users are able to pick the custom date format first time without any issue but when the user tries to change it, it doesn't work.  Only way for users to change is either reset or close application and reopen everything.
 
 ![screenshot 'Custom_DateTime_Formate'](ExportYourGoogleCalendar_screenshots/Custom_DateTime_Formate_anonymized.png)
 
 #### ANSWER
 
-NONE as of yet
+Fixed in version 5.0.10.0.  User can change the date format and then submit a new request.  The dates on the returned data are displayed in the requested new format.
+
 
 ### BUG: 000004 (GitHub Issue:3)
 
@@ -137,13 +148,22 @@ The total Entries label is hidden behind the Help & Feedback, About Product, and
 
 Change UI so compressing the app window stops at the point screen elements (including collapsed/hidden elements) might become obscured.
 
+#### RETEST
+
+Confirmed fixed - minimum frame and window sizes work to prevent this problem in 5.0.10.0
+
+
 ### BUG: 000005 (GitHub Issue:4) 
 
 When a user clicks on the change language option and selects any language. It logout users and then users have to sign in once again to see the changes.  This issue is still the same even on this version of the application.
 
-#### Answer
+#### ANSWER
 
 When language button is clicked pop-up warning to user that changing the language will lose the user's unsaved work.
+
+#### RETEST
+
+Confirmed fixed in 5.0.10.0 - Pop-up warning appears that the application will retstart and the user must click 'ok' to continue and change the language.
 
 
 ### BUG: 000006 (Button Text Need Space Issue: 5)
@@ -155,31 +175,47 @@ When language button is clicked pop-up warning to user that changing the languag
   
 - Help & Feedback button fonts are bold where as the other two buttons are not bold.
 
-![ButtonTextNeedSpace](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/60706a24-1fce-4a3a-9f37-ce42caa50297)
+![ButtonTextNeedSpace](ExportYourGoogleCalendar_screenshots/ButtonTextNeedSpace.png)
+
+
+#### ANSWER
+
+The buttons have been moved to the bottom bar and now follow a conventional button format.  However, the "Support & Feedback" button remains distinct with a red font so as to attract the user's attention (see included image below).  Fixed in v5.0.10.0.  
+
+![screentshot 'Answer_Help_buttons_uniform_and_at_bottom'](ExportYourGoogleCalendar_screenshots/Answer_Help_buttons_uniform_and_at_bottom.PNG)
+
 
 ### BUG: 000007 (Recurrence and attendees data issues 6)
 - Recurrence and attendees data appears more like a backend code. it should have been a plain text because there is just too much info and seems like one column is getting a lot of info. like comments, additional guests, email, ID, resources, and a lot more. I think if this column is just for attendees then the data should be attendees' name and not all this info appearing as a code.
-- Also if u look at the screenshot and the column of Recurrencee then u will see two rows showing some sort of code and also if users wants to export a data then results should be plain test and there should be null written in each box if there is no data.
+- Also if you look at the screenshot and the column of Recurrencee then you will see two rows showing some sort of code and also if users wants to export a data then results should be plain test and there should be null written in each box if there is no data.
 
-![RecurrenceandattendeesdataIssue](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/df27ff68-dda0-42dd-a37c-373219516377)
+![RecurrenceandattendeesdataIssue](ExportYourGoogleCalendar_screenshots/RecurrenceandattendeesdataIssue.png)
+
+#### ANSWER
+
+
 
 
 ### BUG: 000008 (Abbreviations issues 7)
 - In the help section u didn't mention all the abbreviations. In some places it's dddd and in somewhere it's just d. so all those should also be mentioned in the help popup.
 
-  ![AbbrevationsMissing](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/252d2d12-1049-42bc-a5de-80419ef0010a)
+  ![AbbrevationsMissing](ExportYourGoogleCalendar_screenshots/AbbrevationsMissing.png)
+
+#### ANSWER
+
+All allowable formats are now present in the pop-up help window.  Fixed in 5.0.10.0.
 
 
 ### BUG: 000009 (Reset Purchase Error 8)
 - when user press reset purchase button one time and for few seconds nothing happens and then i click again and nothing happened and after that, i clicked that button multiples times then all of sudden popup error message kept coming for the number of times i clicked that button.
 
-![ResetPurchaseErrorMessage](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/4d90ce7c-5ea3-4026-88e4-2ee5750d4ced)
+![ResetPurchaseErrorMessage](ExportYourGoogleCalendar_screenshots/ResetPurchaseErrorMessage.png)
 
 
 ### BUG: 0000010 (Total Entries after SignOut Error 9)
 - when a user signout from the application and straight away signs in again and without selecting any dates they can see the previously viewed number of total entries label under the submit button. I think once they use is signout they should be able to view how many entries they viewed previously. It should start a new session.
 
-![TotalEntriesafterSignout](https://github.com/kamran1400aw/ExportYourGoogleCalendar/assets/145560635/b2df13cb-3523-49f4-9b40-84c96ef783b9)
+![TotalEntriesafterSignout](ExportYourGoogleCalendar_screenshots/TotalEntriesafterSignout.png)
 
 
 
